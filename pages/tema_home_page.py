@@ -24,7 +24,14 @@ class HomePage(Browser):
     def click_DRAG_AND_DROP_button(self):
         self.driver.find_element(*self.DRAG_AND_DROP).click()
 
-    def click_FORM_AUTHENTICTION_button(self):
+    def click_FORM_AUTHENTICATION_button(self):
         self.driver.find_element(*self.FORM_AUTHENTICATION).click()
+
+HomePage.navigate_to_home_page(HomePage())
+HomePage.click_checkboxes_button(HomePage())
+HomePage.navigate_to_home_page(HomePage())
+HomePage.click_DRAG_AND_DROP_button(HomePage())
+HomePage.navigate_to_home_page(HomePage())
+HomePage.click_FORM_AUTHENTICATION_button(HomePage())
 
 
